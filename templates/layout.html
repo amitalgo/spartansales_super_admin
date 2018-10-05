@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include 'includes/head.html' %}
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+           {% include 'includes/topbar.html' %}
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+             {% include 'includes/leftsidebar.html' %}
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+                        {% block body %}
+                        {% endblock %}
+                    </div> <!-- container -->
+                </div> <!-- content -->
+                {% include 'includes/footer.html' %}
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            <!-- Right Sidebar -->
+            {% include 'includes/rightsidebar.html' %}
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- END wrapper -->
+
+
+
+        {% include 'includes/script.html' %}
+
+
+    </body>
+</html>
