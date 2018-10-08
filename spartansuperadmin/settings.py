@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'authh',
     'dashboard',
     'companies',
+    'country',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
